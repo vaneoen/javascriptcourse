@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <title>Ex. 9h</title>
+
+    <style>
+      
+    </style>
+
+  </head>
+
+  <body>
+
+    <input placeholder="Type something" class ="js-input" onkeyup="updatePageText()">
+
+    <p class="js-page-text"></p>
+    
+    <script>
+
+      function updatePageText(){
+        const inputElement = document.querySelector('.js-input');
+        
+        let pageText = inputElement.value
+
+        document.querySelector('.js-page-text')
+          .innerHTML = pageText;
+      }
+    </script>
+  </body>
+</html>
